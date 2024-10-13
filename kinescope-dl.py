@@ -62,7 +62,6 @@ def main(referer,
 
     downloader: KinescopeDownloader = KinescopeDownloader(kinescope_video, temp, ffmpeg_path=ffmpeg_path, mp4decrypt_path=mp4decrypt_path)
 
-    print('= OPTIONS ============================')
     video_resolutions = downloader.get_resolutions()
     if (quality):
         chosen_resolution = video_resolutions[quality - 1]
